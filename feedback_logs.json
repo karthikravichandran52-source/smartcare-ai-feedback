@@ -1,0 +1,140 @@
+[
+  {
+    "timestamp": "2026-02-20 03:50:22",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Positive",
+    "offer_sent": "No",
+    "email_status": "Sent",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 03:50:22",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Positive",
+    "offer_sent": "No",
+    "email_status": "Sent",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 03:52:39",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "offer_sent": "Yes",
+    "email_status": "Failed",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 03:57:09",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "offer_sent": "Yes",
+    "email_status": "Failed",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 03:58:29",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Positive",
+    "offer_sent": "No",
+    "email_status": "Sent",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 04:01:08",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "offer_sent": "Yes",
+    "email_status": "Sent",
+    "resolved_status": "No",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20 04:12:26",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Positive",
+    "offer_sent": "No",
+    "email_status": "Failed",
+    "resolved_status": "In Progress",
+    "id": NaN,
+    "reason": NaN,
+    "mail_status": NaN
+  },
+  {
+    "timestamp": "2026-02-20T04:33:35.307930",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "offer_sent": NaN,
+    "email_status": NaN,
+    "resolved_status": "In Progress",
+    "id": "f21799ce-f24c-4e83-8d38-e0fde7e9b5ba",
+    "reason": "The text mentions that the server is extremely poor, indicating a negative experience with the server.",
+    "mail_status": "Sent"
+  },
+  {
+    "timestamp": "2026-02-20T05:00:02.883640",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "offer_sent": NaN,
+    "email_status": NaN,
+    "resolved_status": "Yes",
+    "id": "e105d6c2-969f-406d-be44-8a5b7d632f96",
+    "reason": NaN,
+    "mail_status": "Sent"
+  },
+  {
+    "id": "c0dad4d2-3f96-4bd3-a0c2-1a0445123ee5",
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Positive",
+    "mail_status": "Failed",
+    "resolved_status": "In Progress",
+    "timestamp": "2026-02-20T05:36:04.465242"
+  },
+  {
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "mail_status": "Sent",
+    "resolved_status": "In Progress",
+    "timestamp": "2026-02-20 05:43:29"
+  },
+  {
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "Negative",
+    "transcription": "\u092c\u0939\u0941\u0924 \u092c\u0947\u0915\u093e\u0930\u0947 \u0928\u0947\u091f\u092a\u0930\u094d\u0915 \u092e\u0941\u091d\u0947 \u0928\u0939\u0940\u0902 \u091a\u093e\u0939\u093f\u090f \u092e\u0948\u0902 \u0936\u093f\u092b\u094d\u091f \u0915\u0930 \u0930\u0939\u093e \u0939\u0942\u0901",
+    "mail_status": "Sent",
+    "resolved_status": "In Progress",
+    "timestamp": "2026-02-20 05:49:32"
+  },
+  {
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "\u3053\u306e\u6587\u306f\u7279\u306b",
+    "transcription": "\u30c1\u30e3\u30f3\u30cd\u30eb\u767b\u9332\u3092\u304a\u9858\u3044\u3044\u305f\u3057\u307e\u3059\u3002",
+    "mail_status": "Sent",
+    "resolved_status": "In Progress",
+    "timestamp": "2026-02-20 05:57:14"
+  },
+  {
+    "email": "karthikravichandran52@gmail.com",
+    "sentiment": "\u0b87\u0ba8\u0bcd\u0ba4 \u0b89\u0bb0\u0bc8\u0baf\u0bbf\u0bb2\u0bcd Negative sentiment",
+    "transcription": "\u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0b9a\u0bb0\u0bcd\u0bb5\u0bbf \u0b9a\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bbe \u0baa\u0bbf\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bb5\u0bbf\u0bb2\u0bcd\u0bb2\u0bc8. \u0b8e\u0ba9\u0b95\u0bcd\u0b95\u0bc1 \u0bb5\u0bc7\u0ba3\u0bcd\u0b9f\u0bbe\u0bae\u0bcd. \u0ba4\u0baf\u0bb5\u0bc1\u0b9a\u0bc6\u0baf\u0bcd\u0ba4\u0bc1 \u0b95\u0bc6\u0b9e\u0bcd\u0b9a\u0bb2\u0bcd \u0baa\u0ba3\u0bcd\u0ba3\u0bc1\u0b99\u0bcd\u0b95\u0bb3\u0bcd.",
+    "mail_status": "Failed",
+    "resolved_status": "In Progress",
+    "timestamp": "2026-02-20 05:58:48"
+  }
+]
