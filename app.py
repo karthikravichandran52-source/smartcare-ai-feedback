@@ -46,8 +46,19 @@ def save_logs(logs):
     with open(LOG_FILE, "w") as f:
         json.dump(logs, f, indent=2)
 
+from email.message import EmailMessage
+import smtplib
+
 def send_email(to_email, subject, body):
     try:
+        msg = EmailMessage()
+        msg["From"] = st.secrets["SMTP_EMAIL"]
+        msg["To"] = to_email
+        msg["Subject"] = subject
+
+        # THIS enables UTF-8 safely
+        msg.set_content(body, charset="utf-8")
+
         with smtplib.SMTP_SSL(
             st.secrets["SMTP_HOST"],
             st.secrets["SMTP_PORT"],
@@ -57,13 +68,10 @@ def send_email(to_email, subject, body):
                 st.secrets["SMTP_EMAIL"],
                 st.secrets["SMTP_PASSWORD"]
             )
-            message = f"Subject: {subject}\n\n{body}"
-            server.sendmail(
-                st.secrets["SMTP_EMAIL"],
-                to_email,
-                message
-            )
+            server.send_message(msg)
+
         return "Sent"
+
     except Exception as e:
         return f"Failed: {e}"
 
