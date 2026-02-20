@@ -1,4 +1,7 @@
 import streamlit as st
+import streamlit as st
+import openai
+import smtplib
 import pandas as pd
 import json
 import os
@@ -9,14 +12,12 @@ from email.message import EmailMessage
 from openai import OpenAI
 
 # ================== CONFIG ==================
-OPENAI_API_KEY = "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"
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 SMTP_EMAIL = "intelligentsystems512@gmail.com"
 SMTP_PASSWORD = "ztetdzmejhxjjcfi"
 
 LOG_FILE = "feedback_logs.json"
 
-client = OpenAI(api_key=OPENAI_API_KEY)
 
 # ================== UI THEME ==================
 st.set_page_config(page_title="AI Feedback Agent", layout="wide")
@@ -47,19 +48,24 @@ def save_logs(logs):
 
 def send_email(to_email, subject, body):
     try:
-        msg = EmailMessage()
-        msg["From"] = SMTP_EMAIL
-        msg["To"] = to_email
-        msg["Subject"] = subject
-        msg.set_content(body)
-
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=10) as server:
-            server.login(SMTP_EMAIL, SMTP_PASSWORD)
-            server.send_message(msg)
-
+        with smtplib.SMTP_SSL(
+            st.secrets["SMTP_HOST"],
+            st.secrets["SMTP_PORT"],
+            timeout=20
+        ) as server:
+            server.login(
+                st.secrets["SMTP_EMAIL"],
+                st.secrets["SMTP_PASSWORD"]
+            )
+            message = f"Subject: {subject}\n\n{body}"
+            server.sendmail(
+                st.secrets["SMTP_EMAIL"],
+                to_email,
+                message
+            )
         return "Sent"
-    except Exception:
-        return "Failed"
+    except Exception as e:
+        return f"Failed: {e}"
 
 def transcribe_audio(path):
     with open(path, "rb") as f:
@@ -196,7 +202,7 @@ elif st.session_state.page == "customer":
                 })
                 save_logs(logs)
 
-                st.success(f"Feedback submitted. Sentiment: {sentiment}")
+                st.success(f"Feedback submitted")
 
     if st.button("⬅ Back"):
         st.session_state.page = "home"
