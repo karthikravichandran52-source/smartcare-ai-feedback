@@ -10,7 +10,7 @@ import tempfile
 import smtplib
 from email.message import EmailMessage
 from openai import OpenAI
-
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 # ================== CONFIG ==================
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 SMTP_EMAIL = "intelligentsystems512@gmail.com"
