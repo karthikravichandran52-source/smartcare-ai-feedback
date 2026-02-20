@@ -190,7 +190,8 @@ elif st.session_state.page == "customer":
                     mail_status = send_email(
                         email,
                         "We’d love to make this right",
-                        "Thanks for your feedback. Here’s a special offer for you."
+                        "Thanks for your feedback. Here’s a special offer for you - 10 percent discount on your next bill",
+                        "Incase of any service issues we will be working on it proactively...."
                     )
                 else:
                     mail_status = send_email(
